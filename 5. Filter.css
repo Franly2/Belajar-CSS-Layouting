@@ -1,0 +1,20 @@
+/* Filter
+blur <px>
+brigthness (angka \ %)
+contrast (angka \ %)
+saturate  (angka \ %)
+grayscale (angka \ %)
+sepia (angka \ %)
+hue-rorate (deg)
+invert (angka \ %)
+opacity (angka \ %)
+drop-shadow (sama seperti box shadow)
+*/
+
+img {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  filter: hue-rotate(50deg);
+}

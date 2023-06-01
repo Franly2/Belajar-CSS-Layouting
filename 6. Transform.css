@@ -1,0 +1,23 @@
+/*
+     Transform
+scale(angka) scaleX(angka) scaleY(angka)
+rotate(deg) rotateX(deg) RotateY(deg) 
+skew(deg) skewX(deg) skewY(deg) 
+translate(px) translateX(px)  translateY(px)
+*/
+.kotak {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  margin: 50px auto 0;
+}
+
+.kotak:hover {
+  transform: translate(50px, 50px);
+  transition: 1s;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}

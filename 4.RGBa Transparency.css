@@ -1,0 +1,27 @@
+* {
+  margin: auto;
+}
+
+.parent {
+  width: 1000px;
+  height: 1200px;
+  margin: auto;
+  background-color: rgba(165, 10, 220, 0.3);
+  padding-top: 80px;
+}
+
+.parent p {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.parent div {
+  line-height: 90px;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  float: left;
+  background-color: rgb(212, 255, 0);
+  margin: 5px;
+}

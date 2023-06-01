@@ -1,0 +1,107 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 2000px;
+}
+
+.fContainer {
+  width: 100%;
+  height: 50px;
+  background-color: crimson;
+  position: fixed;
+  top: 0;
+}
+
+.wrapper {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: crimson;
+}
+
+.nama p {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.link {
+  display: flex;
+  list-style: none;
+}
+
+.link li {
+  padding: 15px;
+}
+
+.link li a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  padding: 15px;
+}
+
+.link li a:hover {
+  color: white;
+  transition: ease-in-out 300ms;
+}
+
+.active {
+  background-color: white;
+}
+
+.active:hover {
+  color: crimson !important;
+}
+
+.sub-menu-1 {
+  display: none;
+  transition: 2s;
+}
+
+.link li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: transparent;
+  margin-top: 15px;
+  margin-left: -15px;
+  border-radius: 5px;
+}
+
+.link .sub-menu-1 ul {
+  list-style: none;
+}
+
+.dropitem {
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+  background-color: rgb(129, 47, 47);
+}
+
+.dropdown-menu ul li {
+  padding: 20px;
+}
+
+.dropdown-menu ul li a {
+  margin-left: -15px;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

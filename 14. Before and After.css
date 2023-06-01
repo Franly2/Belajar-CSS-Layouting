@@ -1,0 +1,131 @@
+/* div {
+  width: 100px;
+  height: 100px;
+  background: pink;
+  position: relative;
+  margin: 20px auto;
+}
+
+div::before,
+div::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+div::before {
+  top: -15px;
+  left: -15px;
+  background-color: saddlebrown;
+}
+
+div::after {
+  bottom: -15px;
+  right: -15px;
+  background-color: red;
+} */
+
+/* ! */
+/* didalam konten bisa diisi dengan : */
+/* string, biasanya digunakan untuk icon atau glyph */
+/* image, bisa berupa gamabr yang tidak dapat di resize, atau bisa juga berupa gradient */
+/* kosong, content : " " berguna jika akan membuat sebuah elemen baru yang tidak ada tulisannya atau melakukan clearfix*/
+/* counter, counter(item) berguna untuk memberi style pada list */
+
+/* ! Image Icon 
+h1::before {
+  content: url(Img/home.png) " ";
+}
+
+/* *Image Icon tetapi iconnya bisa di resize */
+/* h1::before {
+  content: " ";
+  display: block;
+  background: url(Img/home.png);
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 8px 5px 0 0;
+} */
+
+/* ! GlyphIcon */
+
+/* ! Breadcrumbs */
+
+/* a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+a::after {
+  content: " /";
+}
+
+a:first-child::before {
+  content: " :: ";
+}
+
+a:last-child::after {
+  content: "";
+}
+
+/* ! Quoting */
+/* 
+blockquote {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 50px;
+  line-height: 1.4em;
+  position: relative;
+}
+
+blockquote::before,
+blockquote::after {
+  content: open-quote;
+  font-size: 60px;
+  color: #999;
+  line-height: 0;
+  position: relative;
+  top: 20px;
+}
+
+blockquote::after {
+  content: close-quote;
+} */
+
+/* ! Bubble Text */
+
+h2 {
+  float: left;
+  width: 170px;
+}
+
+.CSS {
+  float: left;
+  width: 200px;
+  background-color: #727272;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+  position: relative;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.CSS::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #727272;
+  position: absolute;
+  top: 12px;
+  left: -12px;
+}

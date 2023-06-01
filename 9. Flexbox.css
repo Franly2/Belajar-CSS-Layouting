@@ -1,0 +1,32 @@
+/* PROPERTI UNTUK CONTAINER   
+
+.container {
+  display: flex;
+  flex-direction: row/row-reverse/column/column-reverse;                                 MENGATUR ARAH DAN URUTAN ITEMS DI DALAM CONTAINER;
+  flex-wrap: nowrap/wrap/wrap-reverse;                                                   MENGATUR KEMANA ITEM TERSISA YANG TIDAK CUKUP DALAM 1 ROW CONTAINER;
+  justify-content: flex-start/flex-end/center/space-between/space-around/space-evenly;   MENGATUR KESESEJARAN ANTAR ITEMS SECARA MAIN AXIS(HORIZONTAL);
+  align-items: flex-start/flex-end/center/stretch/baseline;                              MENGATUR KESESEJARAN ANTAR ITEMS SECARA CROSS AXIS (VERTIKAL);
+}
+
+ PROPERTI UNTUK ITEMS 
+ 
+.kotak {
+    order: 1-seterusnya;                         MENGATUR URUTAN ITEMS NYA;
+    flex-grow/flex: ;                            UKURAN ITEM NYA ,jika diberikan flex maka ukuran item nya akan memenuhi containernya/parent nya;
+    align-self: flex-start/flex-end/stretch;     MENGATUR POSISI SEBUAH ITEM SECARA SPESIFIK TERHADAP CROSS AXIS(VERTIKAL;)
+}
+*/
+
+.container {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.kotak {
+  width: 200px;
+  height: 200px;
+  background-color: crimson;
+}
